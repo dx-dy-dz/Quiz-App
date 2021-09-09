@@ -1,2 +1,2 @@
 # Quiz-App
-A simple quiz app built with JavaScript
+  A simple quiz app built with JavaScript
