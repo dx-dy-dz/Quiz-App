@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="home custom-box ">
+      <h3 class="heading">Quiz App</h3>
+      <h4 class="ins">Instructions</h4>
+      <!-- <br /> -->
+      <ul class="list">
+        <li>The quiz consists of 10 questions.</li>
+        <li>Each correct answer is worth 1 point.</li>
+        <li>Multiple attempts are not allowed.</li>
+      </ul>
+      <button class="start-btn" onclick="startQuiz()">Start</button>
+    </div>
+
+    <div class="qn-box custom-box hide">
+      <div class="qn-no"></div>
+      <div class="qn-text"></div>
+      <div class="option-container">
+       
+      </div>
+      <div class="next">
+        <button class="next-btn" onclick="next()">Next</button>
+      </div>
+      <div class="ans-indicator">
+        
+      </div>
+    </div>
+
+    <div class="result-box custom-box hide">
+      <h2>Result</h2>
+      <table class="table-border">
+        <tr>
+          <td>Questions</td>
+          <td><span class="total-qn"></span></td>
+        </tr>
+        <tr>
+          <td>Attempted</td>
+          <td><span class="atmpt-qn"></span></td>
+        </tr>
+        <tr>
+          <td>Correct</td>
+          <td><span class="rght-qn"></span></td>
+        </tr>
+        <tr>
+          <td>Wrong</td>
+          <td><span class="wrng-qn"></span></td>
+        </tr>
+        <tr>
+          <td>Percentage</td>
+          <td><span class="perc-qn"></span></td>
+        </tr>
+        <tr>
+          <td>Total Score</td>
+          <td><span class="total-score"></span></td>
+        </tr>
+      </table>
+      <div class="res-btn">
+        <button type="button" class="try-btn" onclick="tryAgain()">Try Again</button>
+        <button type="button" class="go-home-btn" onclick="goHome()">Home</button>
+      </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
