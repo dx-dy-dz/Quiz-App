@@ -51,7 +51,7 @@ const questions = [
     },
 
     {
-    "question": 'What was the original name of JavaScript when it discovered?',
+    "question": 'What was the original name of JavaScript when it was discovered?',
     "options":  ['LiveScript','EScript','Mocha','TypeScript'],
     "answer": 2
     },
