@@ -3,6 +3,7 @@
   # Features 
   * Responsive
   * Interactive
+  * Animations
   * Random questions and options
 # Screenshots
 ![Screenshot](ss-1.png)
