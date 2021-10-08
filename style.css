@@ -179,7 +179,7 @@ body {
 }
 .qn-box .ans-indicator {
         margin-left: 1%;
-    }
+}
 .qn-box .ans-indicator .num {
         height: 1vh;
         width: 2vw;
@@ -188,7 +188,7 @@ body {
         border-radius: 50%;
         margin-left: 1.5%;
         margin-bottom: 2%;
-    }
+ }
 .qn-box .next .next-btn {
         
             border: none;
@@ -208,17 +208,17 @@ body {
             padding-right: 5%;
             margin-bottom: 2%;
             transition: 1.2s;
-            }
+}
 
 .qn-box .next .next-btn:hover {
             
             background: rgb(252, 252, 252);
             color: #000000;
-            }
+}
 .qn-box .next .next-btn:active {
             background: #000000;
             color: #ffffff;
-            }
+}
 .result-box {
             display: flex;
             justify-content: space-evenly;
@@ -228,8 +228,6 @@ body {
             background-color: #10af95;
             margin-left: 25%;
             margin-right: 25%;
-        
-            
             border-radius: 17.5px;
             height: 60vh;
             width: 50vw ;
