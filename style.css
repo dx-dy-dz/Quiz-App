@@ -49,9 +49,7 @@ body {
         color: #000000;
     }
 .list li {
-   /* font-size: 5vw;  */
-  
-    font-size: 20px;
+        font-size: 20px;
     }
 .start-btn {
         background: #0b032d;
