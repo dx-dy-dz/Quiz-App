@@ -1,5 +1,5 @@
 # Quiz-App
-  A simple quiz app built with JavaScript
+  A quiz app built with JavaScript
   # Features 
   * Responsive
   * Interactive
