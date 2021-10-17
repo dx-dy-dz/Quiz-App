@@ -6,12 +6,12 @@ const questionText = document.querySelector('.qn-text')
 const optionContainer = document.querySelector('.option-container')
 const answersIndicatorContainer = document.querySelector('.ans-indicator')
  
-let questionCounter = 0
+let questionCounter = 0;
 let currentQuestion
 let availableQuestions = []
 let availableOptions = []
 let correctAnswer = 0
-let attemptedQns = 0
+let attemptedQns = 0 
 
 function setAvailableQuestions () {
   const totalQuestion = questions.length
