@@ -5,7 +5,8 @@ const questionNumber = document.querySelector('.qn-no')
 const questionText = document.querySelector('.qn-text')
 const optionContainer = document.querySelector('.option-container')
 const answersIndicatorContainer = document.querySelector('.ans-indicator')
- 
+const questionLimit = 10; 
+
 let questionCounter = 0
 let currentQuestion
 let availableQuestions = []
@@ -22,7 +23,7 @@ function setAvailableQuestions () {
 
 function getNewQuestion () {
   questionNumber.innerHTML =
-    ' Question ' + (questionCounter + 1) + ' of ' + questions.length
+    ' Question ' + (questionCounter + 1) + ' of ' + questionLimit
 
   const questionIndex =
     availableQuestions[Math.floor(Math.random() * availableQuestions.length)]
@@ -82,7 +83,7 @@ function unclickable () {
   }
 }
 function next () {
-  if (questionCounter == questions.length) {
+  if (questionCounter == questionLimit) {
     console.log('Quiz is over')
     stopQuiz()
   } else {
@@ -95,17 +96,17 @@ function stopQuiz () {
   showResult()
 }
 function showResult () {
-  resultBox.querySelector('.total-qn').innerHTML = questions.length
+  resultBox.querySelector('.total-qn').innerHTML = questionLimit
   resultBox.querySelector('.atmpt-qn').innerHTML = attemptedQns
   resultBox.querySelector('.rght-qn').innerHTML = correctAnswer
   resultBox.querySelector('.wrng-qn').innerHTML = attemptedQns - correctAnswer
   const percentage = (correctAnswer / questions.length) * 100
   resultBox.querySelector('.perc-qn').innerHTML = percentage.toFixed(2) + '%'
   resultBox.querySelector('.total-score').innerHTML =
-    correctAnswer + ' / ' + questions.length
+    correctAnswer + ' / ' + questionLimit
 }
 function answersIndicator () {
-  const totalQuestion = questions.length
+  const totalQuestion = questionLimit
   for (let i = 0; i < totalQuestion; i++) {
     const indicator = document.createElement('div')
     answersIndicatorContainer.appendChild(indicator)
@@ -115,6 +116,7 @@ function reset () {
   questionCounter = 0
   correctAnswer = 0
   attemptedQns = 0
+  availableQuestions = []
 }
 function tryAgain () {
   resultBox.classList.add('hide')
