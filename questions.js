@@ -60,6 +60,12 @@ const questions = [
     "options":  ['LiveScript','EScript','Mocha','TypeScript'],
     "answer": 2
     },
+    
+    {
+        "question": 'How to write an IF statement in JavaScript?',
+        "options":  ['if i = 5','if(i == 5)','if i = 5 then','if i == 5 then'],
+        "answer": 1
+    }  
 
     {
     "question": 'Which of the following is not a JavaScript framework or library?',
