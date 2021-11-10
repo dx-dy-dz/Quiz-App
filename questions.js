@@ -33,6 +33,12 @@ const questions = [
     },
     
     {
+        "question": 'JavaScript is a ___ -side programming language.',
+        "options":  ['Client','Server','Both','None'],
+        "answer": 2
+    },
+    
+    {
     "question": 'How do you round the number 7.25, to the nearest integer?',
     "options":  ['rnd(7.25)','round(7.25)','Math.round(7.25)','Math.rnd(7.25)'],
     "answer": 2
