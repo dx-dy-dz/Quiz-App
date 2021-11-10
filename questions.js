@@ -31,18 +31,7 @@ const questions = [
         "options":  ['.javas','.js','.script','.javascript'],
         "answer": 1
     },
-    
-    {
-        "question": 'JavaScript is a ___ -side scripting language.',
-        "options":  ['Client','Server','Both','None'],
-        "answer": 0
-    },
-    
-    {
-    "question": 'How do you round the number 7.25, to the nearest integer?',
-    "options":  ['rnd(7.25)','round(7.25)','Math.round(7.25)','Math.rnd(7.25)'],
-    "answer": 2
-    },
+
     {
     "question": 'What is the output of 33==33.0 ?',
     "options":  ['True','False','NaN','Undefined'],
@@ -66,16 +55,28 @@ const questions = [
     "options":  ['LiveScript','EScript','Mocha','TypeScript'],
     "answer": 2
     },
-    
-    {
-        "question": 'How to write an IF statement in JavaScript?',
-        "options":  ['if i = 5','if(i == 5)','if i = 5 then','if i == 5 then'],
-        "answer": 1
-    }  
 
     {
     "question": 'Which of the following is not a JavaScript framework or library?',
     "options":  ['Polymer','Meteor','JQuery','Cassandra'],
     "answer": 3
+    },
+    
+    {
+    "question": 'How do you round the number 7.25, to the nearest integer?',
+    "options":  ['rnd(7.25)','round(7.25)','Math.round(7.25)','Math.rnd(7.25)'],
+    "answer": 2
+    },
+
+    {
+        "question": 'JavaScript is a ___ -side scripting language.',
+        "options":  ['Client','Server','Both','None'],
+        "answer": 0
+    },
+
+    {
+        "question": 'How to write an IF statement in JavaScript?',
+        "options":  ['if i = 5','if(i == 5)','if i = 5 then','if i == 5 then'],
+        "answer": 1
     }  
 ];
