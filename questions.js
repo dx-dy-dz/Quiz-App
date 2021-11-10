@@ -35,7 +35,7 @@ const questions = [
     {
         "question": 'JavaScript is a ___ -side programming language.',
         "options":  ['Client','Server','Both','None'],
-        "answer": 2
+        "answer": 0
     },
     
     {
