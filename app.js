@@ -100,7 +100,7 @@ function showResult () {
   resultBox.querySelector('.atmpt-qn').innerHTML = attemptedQns
   resultBox.querySelector('.rght-qn').innerHTML = correctAnswer
   resultBox.querySelector('.wrng-qn').innerHTML = attemptedQns - correctAnswer
-  const percentage = (correctAnswer / questions.length) * 100
+  const percentage = (correctAnswer / questionLimit) * 100
   resultBox.querySelector('.perc-qn').innerHTML = percentage.toFixed(2) + '%'
   resultBox.querySelector('.total-score').innerHTML =
     correctAnswer + ' / ' + questionLimit
