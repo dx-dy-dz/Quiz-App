@@ -31,7 +31,7 @@ function getNewQuestion () {
   questionText.innerHTML = currentQuestion.question
 
   const index1 = availableQuestions.indexOf(questionIndex)
-  availableQuestions.splice(index1, 1)
+  availableQuestions.splice(index1, 1) 
 
   const optionLen = currentQuestion.options.length
 
