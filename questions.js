@@ -31,7 +31,12 @@ const questions = [
         "options":  ['.javas','.js','.script','.javascript'],
         "answer": 1
     },
-
+    
+    {
+    "question": 'How do you round the number 7.25, to the nearest integer?',
+    "options":  ['rnd(7.25)','round(7.25)','Math.round(7.25)','Math.rnd(7.25)'],
+    "answer": 2
+    },
     {
     "question": 'What is the output of 33==33.0 ?',
     "options":  ['True','False','NaN','Undefined'],
